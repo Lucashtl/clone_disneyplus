@@ -1,5 +1,9 @@
 @use 'hero';
 @use 'variaveis';
+@use 'shows';
+@use 'plans';
+
+
 
 @font-face {
     font-family: Avenir;
@@ -16,6 +20,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: avenir, sans-serif ;
+}
+body{
+    background-color: variaveis.$cordefundo;
 }
 
 @mixin texting($fontsize: 16px){
@@ -31,10 +39,6 @@
 
 
 
-body{
-    background-color: variaveis.$cordefundo;
-    font-family: avenir, sans-serif ;
-}
 
 .text--big{
     @include texting(18px);
@@ -63,4 +67,17 @@ body{
     @include texting(18px);
     color: variaveis.$cortextosecundario;
     text-decoration: underline;
+}
+
+.button{
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    height: 60px;
+    color: variaveis.$cortextosecundario;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
 }
