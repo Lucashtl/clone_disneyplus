@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
+    "build": "node_modules/.bin/gulp build",
     "dev": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
