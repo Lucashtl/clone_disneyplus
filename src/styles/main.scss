@@ -65,7 +65,7 @@ body {
 }
 
 .text--small {
-    @include texting(28px);
+    @include texting(12px);
 
     @media (max-width: 768px){
         @include texting(11px);
